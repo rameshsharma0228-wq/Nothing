@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Ashavni Kumar Sharma - 1st Year B.Tech Student, Cybersecurity Enthusiast, and Python Learner.">
+  <title>Ashavni Kumar Sharma | Cybersecurity Portfolio</title>
+  
+  <!-- Google Fonts: Space Grotesk and JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-bracket">[</span><span class="logo-text">ASH</span><span class="logo-dot">.</span><span class="logo-bracket">]</span>
+      </a>
+
+      <!-- Pure CSS Mobile Navigation Toggle (Checkbox Hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu button">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link">Learning Journey</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-link-highlight">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <!-- Status Indicator Pill -->
+          <div class="status-badge" role="status">
+            <span class="status-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-core"></span>
+            </span>
+            <span class="status-text">Currently Learning Cybersecurity</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ashavni Kumar Sharma</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Cybersecurity Enthusiast <span class="separator">|</span> B.Tech Student <span class="separator">|</span> Python Learner
+          </p>
+
+          <p class="hero-description">
+            Exploring the digital world, understanding how systems work, and learning how to make them more secure.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#journey" class="btn btn-primary">
+              <span>Explore My Journey</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Terminal Card -->
+        <div class="hero-terminal">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
+              <div class="terminal-title">
+                <svg class="terminal-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>sec-lab@ashavni: ~</span>
+              </div>
+              <div class="terminal-badge">BASH</div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt-user">ash@sec-box</span>:<span class="prompt-dir">~</span>$&nbsp;<span class="command">whoami</span>
+              </div>
+              <div class="terminal-output text-bright">
+                Ashavni Kumar Sharma [1st Year B.Tech Student]
+              </div>
+
+              <div class="terminal-line">
+                <span class="prompt-user">ash@sec-box</span>:<span class="prompt-dir">~</span>$&nbsp;<span class="command">cat /etc/security-roadmap.conf</span>
+              </div>
+              <div class="terminal-output">
+                <span class="term-key">PRIMARY_FOCUS</span> = "<span class="term-val">Cybersecurity & Network Defense</span>"<br>
+                <span class="term-key">DEV_LANGUAGE</span>  = "<span class="term-val">Python 3 (Fundamentals)</span>"<br>
+                <span class="term-key">LAB_ENV</span>       = "<span class="term-val">Linux / Virtual Labs</span>"<br>
+                <span class="term-key">CURRENT_STATUS</span> = "<span class="term-val term-val-accent">Actively Exploring & Building</span>"
+              </div>
+
+              <div class="terminal-line">
+                <span class="prompt-user">ash@sec-box</span>:<span class="prompt-dir">~</span>$&nbsp;<span class="command">ping -c 1 future.objective</span>
+              </div>
+              <div class="terminal-output text-dim">
+                64 bytes from secure.network: icmp_seq=1 ttl=64 time=0.038 ms<br>
+                --- 1 packets transmitted, 0% packet loss [Defense Readiness Online] ---
+              </div>
+
+              <div class="terminal-line terminal-prompt-active">
+                <span class="prompt-user">ash@sec-box</span>:<span class="prompt-dir">~</span>$&nbsp;<span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>01 // ABOUT ME<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 class="section-title">Foundations & Passion</h2>
+          <p class="section-subtitle">A first-year engineering student dedicated to understanding the architecture of secure computing.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Introduction -->
+          <div class="about-text-card">
+            <h3 class="about-card-title">
+              <span class="title-highlight">Hello!</span> I'm Ashavni
+            </h3>
+            
+            <p class="about-paragraph">
+              I am a first-year <strong>B.Tech student</strong> with a keen interest in the world of <strong>cybersecurity and technology</strong>. While I am at the early stage of my academic and technical journey, I am genuinely captivated by how computer networks function, how security vulnerabilities emerge, and the strategies required to protect digital infrastructure.
+            </p>
+
+            <p class="about-paragraph">
+              Currently, I am actively building my foundation in <strong>programming with Python</strong>, while simultaneously immersing myself in fundamental concepts such as <strong>Linux command-line navigation, computer networking protocols, and basic ethical hacking principles</strong>.
+            </p>
+
+            <p class="about-paragraph">
+              I view cybersecurity not just as a career goal, but as an ongoing curiosity-driven discipline. Rather than claiming seasoned expertise, my focus is on authentic learning: practicing hands-on in controlled lab environments, writing clean code, and understanding the core mechanics of information security step-by-step.
+            </p>
+
+            <div class="about-quote">
+              <span class="quote-symbol">“</span>
+              <span>Learning how systems are built is the first step toward understanding how to protect them.</span>
+            </div>
+          </div>
+
+          <!-- Quick Stats / Technical Overview HUD -->
+          <div class="about-hud-card">
+            <div class="hud-header">
+              <svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <span class="hud-title">ACADEMIC & SECURITY PROFILE</span>
+            </div>
+
+            <div class="hud-content">
+              <div class="hud-item">
+                <span class="hud-label">Academic Standing</span>
+                <span class="hud-value">1st Year B.Tech Undergraduate</span>
+              </div>
+
+              <div class="hud-item">
+                <span class="hud-label">Primary Interest</span>
+                <span class="hud-value text-accent">Cybersecurity & Defense</span>
+              </div>
+
+              <div class="hud-item">
+                <span class="hud-label">Programming Fundamentals</span>
+                <span class="hud-value">Python (Basic / In Progress)</span>
+              </div>
+
+              <div class="hud-item">
+                <span class="hud-label">Core Exploration Areas</span>
+                <span class="hud-value">Linux, Networking, InfoSec</span>
+              </div>
+
+              <div class="hud-item">
+                <span class="hud-label">Current Stage</span>
+                <span class="hud-value hud-badge">Beginner & Active Learner</span>
+              </div>
+
+              <div class="hud-item">
+                <span class="hud-label">Mindset</span>
+                <span class="hud-value">Curious, Analytical, Consistent</span>
+              </div>
+            </div>
+
+            <div class="hud-footer">
+              <span class="hud-status-dot"></span>
+              <span class="hud-footer-text">Security mindset in development</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>02 // SKILLS & INTERESTS<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 class="section-title">Technical Competencies & Exploration</h2>
+          <p class="section-subtitle">Clearly distinguishing between established basic fundamentals and active learning domains.</p>
+        </div>
+
+        <!-- Category 1: Programming & Web Technologies (Basic Knowledge) -->
+        <div class="skills-category-group">
+          <div class="category-header">
+            <div class="category-badge">FOUNDATIONAL KNOWLEDGE</div>
+            <h3 class="category-title">Programming & Markup Languages</h3>
+            <p class="category-description">Core technical building blocks I currently practice and use for developing logic and interfaces.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Python -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-basic">Basic</span>
+              </div>
+              <h4 class="skill-name">Python</h4>
+              <p class="skill-detail">
+                Developing fundamentals in core syntax, variables, control flow, functions, basic data structures, and simple problem-solving scripts.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">Variables & Logic</span>
+                <span class="skill-tag">Basic Scripts</span>
+              </div>
+            </div>
+
+            <!-- HTML5 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-basic">Foundational</span>
+              </div>
+              <h4 class="skill-name">HTML5</h4>
+              <p class="skill-detail">
+                Structuring clean, accessible web pages using semantic HTML elements, form structures, and standards-compliant document layouts.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">Semantic Tags</span>
+                <span class="skill-tag">Structure</span>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-basic">Foundational</span>
+              </div>
+              <h4 class="skill-name">CSS3</h4>
+              <p class="skill-detail">
+                Styling responsive layouts using Flexbox, CSS Grid, custom properties (variables), modern pseudo-classes, and subtle keyframe transitions.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">Flexbox & Grid</span>
+                <span class="skill-tag">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Cybersecurity & Technical Interests (Actively Learning / Exploring) -->
+        <div class="skills-category-group">
+          <div class="category-header">
+            <div class="category-badge category-badge-learning">ACTIVE STUDY & EXPLORATION</div>
+            <h3 class="category-title">Cybersecurity & Infrastructure Interests</h3>
+            <p class="category-description">Topics I am actively studying, researching, and experimenting with in my first year.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Linux Fundamentals -->
+            <div class="skill-card skill-card-active">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper skill-icon-accent">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-learning">Actively Learning</span>
+              </div>
+              <h4 class="skill-name">Linux Fundamentals</h4>
+              <p class="skill-detail">
+                Familiarizing myself with the Bash shell, command-line operations, file system hierarchy, permissions (chmod/chown), and package management.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">Terminal Navigation</span>
+                <span class="skill-tag">File Permissions</span>
+              </div>
+            </div>
+
+            <!-- Computer Networking -->
+            <div class="skill-card skill-card-active">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper skill-icon-cyan">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-learning">Actively Learning</span>
+              </div>
+              <h4 class="skill-name">Computer Networking</h4>
+              <p class="skill-detail">
+                Studying core network models (OSI and TCP/IP layers), IP addressing, subnetting concepts, DNS, common network ports, and routing basics.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">OSI / TCP-IP</span>
+                <span class="skill-tag">IP & DNS</span>
+              </div>
+            </div>
+
+            <!-- Ethical Hacking (Learning) -->
+            <div class="skill-card skill-card-active">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper skill-icon-purple">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-learning">Learning Concept</span>
+              </div>
+              <h4 class="skill-name">Ethical Hacking (Learning)</h4>
+              <p class="skill-detail">
+                Learning ethical principles, reconnaissance methodologies, vulnerability assessment concepts, and introductory CTF challenges.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">Security Methodology</span>
+                <span class="skill-tag">Beginner CTFs</span>
+              </div>
+            </div>
+
+            <!-- Web Security (Exploring) -->
+            <div class="skill-card skill-card-active">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper skill-icon-accent">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-exploring">Exploring</span>
+              </div>
+              <h4 class="skill-name">Web Security (Exploring)</h4>
+              <p class="skill-detail">
+                Exploring fundamental web vulnerabilities such as injection concepts, cross-site scripting (XSS) overviews, and safe HTTP transmission principles.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">OWASP Awareness</span>
+                <span class="skill-tag">HTTP Protocols</span>
+              </div>
+            </div>
+
+            <!-- Information Security -->
+            <div class="skill-card skill-card-active">
+              <div class="skill-card-top">
+                <div class="skill-icon-wrapper skill-icon-cyan">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <span class="skill-level-badge level-exploring">Exploring</span>
+              </div>
+              <h4 class="skill-name">Information Security</h4>
+              <p class="skill-detail">
+                Understanding core security pillars: the CIA Triad (Confidentiality, Integrity, Availability), authentication mechanisms, and encryption basics.
+              </p>
+              <div class="skill-meta">
+                <span class="skill-tag">CIA Triad</span>
+                <span class="skill-tag">Defense Principles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>03 // LABS & PROJECTS<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 class="section-title">Projects & Lab Practice</h2>
+          <p class="section-subtitle">Practical initiatives and hands-on laboratory exercises currently underway or scheduled.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Python Projects -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-status-tag status-in-progress">In Progress</span>
+              <span class="project-number">01</span>
+            </div>
+            
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+
+            <h3 class="project-title">Python Automation & Utility Scripts</h3>
+            <p class="project-description">
+              A collection of beginner command-line utility scripts developed in Python, focusing on input processing, string hashing experiments, and automated file organizing.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python 3</span>
+              <span class="tech-pill">CLI Utilities</span>
+              <span class="tech-pill">File I/O</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-project" aria-label="View Python Projects on GitHub (Placeholder)">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="badge-subtle">[Placeholder]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Linux Practice & Experiments -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-status-tag status-in-progress">In Progress</span>
+              <span class="project-number">02</span>
+            </div>
+
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+
+            <h3 class="project-title">Linux Practice & Shell Experiments</h3>
+            <p class="project-description">
+              Hands-on laboratory configuration notes, basic bash automation scripts, user permission auditing experiments, and Linux virtual machine environment setup.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">Bash</span>
+              <span class="tech-pill">Linux CLI</span>
+              <span class="tech-pill">Virtualization</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-project" aria-label="View Linux Experiments on GitHub (Placeholder)">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="badge-subtle">[Placeholder]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Networking Fundamentals -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-status-tag status-coming-soon">Coming Soon</span>
+              <span class="project-number">03</span>
+            </div>
+
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </div>
+
+            <h3 class="project-title">Networking Protocols & Analysis Notes</h3>
+            <p class="project-description">
+              Documentation and structured exercises covering subnetting logic, packet inspection with Wireshark in sandbox environments, and DNS query tracking.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">TCP/IP</span>
+              <span class="tech-pill">Wireshark (Intro)</span>
+              <span class="tech-pill">Subnetting</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-project" aria-label="View Networking Notes on GitHub (Placeholder)">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="badge-subtle">[Placeholder]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Cybersecurity Labs -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <span class="project-status-tag status-coming-soon">Coming Soon</span>
+              <span class="project-number">04</span>
+            </div>
+
+            <div class="project-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+
+            <h3 class="project-title">Cybersecurity Labs & Writeups</h3>
+            <p class="project-description">
+              Walkthroughs and practical solutions from beginner security platforms (OverTheWire, introductory TryHackMe rooms), logging learning milestones and methodology.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill">InfoSec Labs</span>
+              <span class="tech-pill">Ethical Concepts</span>
+              <span class="tech-pill">Documentation</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#" class="btn-project" aria-label="View Cybersecurity Labs on GitHub (Placeholder)">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="badge-subtle">[Placeholder]</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING JOURNEY SECTION ==================== -->
+    <section id="journey" class="journey-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>04 // LEARNING ROADMAP<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 class="section-title">My Learning Journey</h2>
+          <p class="section-subtitle">A deliberate, step-by-step roadmap outlining my ongoing progression into computing and cybersecurity.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Step 01 -->
+          <div class="timeline-item timeline-item-active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 01</span>
+                <span class="timeline-status-tag status-active">Active Focus</span>
+              </div>
+              <h3 class="timeline-title">Programming Fundamentals (Python)</h3>
+              <p class="timeline-description">
+                Building core algorithmic thinking, mastering control statements, functions, list manipulation, basic string parsing, and understanding clean programming practices.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">Core Syntax</span>
+                <span class="topic-tag">Data Structures</span>
+                <span class="topic-tag">Scripting Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="timeline-item timeline-item-active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 02</span>
+                <span class="timeline-status-tag status-active">Active Focus</span>
+              </div>
+              <h3 class="timeline-title">Linux & Command Line</h3>
+              <p class="timeline-description">
+                Becoming comfortable in UNIX-like environments: shell navigation, file system architecture, user and group permission management, processes, and basic shell scripting.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">Bash Environment</span>
+                <span class="topic-tag">Permissions & Ownership</span>
+                <span class="topic-tag">CLI Navigation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="timeline-item timeline-item-active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 03</span>
+                <span class="timeline-status-tag status-active">In Progress</span>
+              </div>
+              <h3 class="timeline-title">Computer Networking</h3>
+              <p class="timeline-description">
+                Understanding how information traverses networks: the 7-layer OSI model, TCP/IP stack, routing fundamentals, IP addressing, DNS lookups, and basic protocol analysis.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">TCP/IP & UDP</span>
+                <span class="topic-tag">Subnetting</span>
+                <span class="topic-tag">DNS & Protocols</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="timeline-item timeline-item-active">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 04</span>
+                <span class="timeline-status-tag status-active">Active Practice</span>
+              </div>
+              <h3 class="timeline-title">Web Technologies (HTML & CSS)</h3>
+              <p class="timeline-description">
+                Learning how the front-end of the web functions, client-server relationships, DOM structure, semantic HTML5 markup, and responsive CSS layouts.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">Semantic HTML5</span>
+                <span class="topic-tag">Modern CSS3</span>
+                <span class="topic-tag">Web Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot marker-dot-upcoming"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 05</span>
+                <span class="timeline-status-tag status-upcoming">Upcoming Phase</span>
+              </div>
+              <h3 class="timeline-title">Cybersecurity Fundamentals</h3>
+              <p class="timeline-description">
+                Delving deeply into the CIA Triad, threat vectors, authentication vs authorization, defensive perimeter concepts, cryptography basics, and risk assessment models.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">Security Architecture</span>
+                <span class="topic-tag">Threat Vectors</span>
+                <span class="topic-tag">Crypto Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 06 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot marker-dot-upcoming"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-step">STEP 06</span>
+                <span class="timeline-status-tag status-upcoming">Upcoming Phase</span>
+              </div>
+              <h3 class="timeline-title">Ethical Hacking & Web Security</h3>
+              <p class="timeline-description">
+                Applying foundational knowledge in authorized virtual labs: reconnaissance methodology, vulnerability scanning, analyzing common web flaws (OWASP Top 10), and ethical remediation.
+              </p>
+              <div class="timeline-topics">
+                <span class="topic-tag">Ethical Reconnaissance</span>
+                <span class="topic-tag">OWASP Security</span>
+                <span class="topic-tag">Controlled Labs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>05 // CONTACT & CONNECT<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing cybersecurity, sharing beginner learning resources, or connecting? Reach out below.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Card -->
+          <div class="contact-card">
+            <h3 class="contact-card-title">Communication Channels</h3>
+            <p class="contact-card-intro">
+              I am always eager to connect with fellow students, mentors, and enthusiasts who are passionate about technology, network defense, and programming.
+            </p>
+
+            <div class="contact-links-list">
+              
+              <!-- Email Item -->
+              <a href="mailto:ashavni.placeholder@example.com" class="contact-item" aria-label="Send an email to Ashavni (Placeholder)">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-item-label">Direct Email</span>
+                  <span class="contact-item-value">ashavni.placeholder@example.com</span>
+                </div>
+                <div class="contact-item-arrow">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- GitHub Item -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Visit GitHub Profile (Placeholder)">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-item-label">GitHub Profile</span>
+                  <span class="contact-item-value">github.com/placeholder</span>
+                </div>
+                <div class="contact-item-arrow">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- LinkedIn Item -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Visit LinkedIn Profile (Placeholder)">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-item-details">
+                  <span class="contact-item-label">LinkedIn Profile</span>
+                  <span class="contact-item-value">linkedin.com/in/placeholder</span>
+                </div>
+                <div class="contact-item-arrow">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Pure HTML/CSS Message Note Card -->
+          <div class="contact-card contact-card-accent">
+            <h3 class="contact-card-title">Leave a Message (Placeholder Form)</h3>
+            <p class="contact-card-intro">
+              This is a static preview form designed with pure HTML and CSS for demonstration purposes.
+            </p>
+
+            <form class="static-contact-form" action="#contact" method="get">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Your Name or Alias" disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg" class="form-label">Message</label>
+                <textarea id="contact-msg" class="form-textarea" rows="3" placeholder="Write your message here... (Demo Only)" disabled></textarea>
+              </div>
+
+              <button type="button" class="btn btn-secondary btn-full disabled-btn" disabled>
+                <span>Form Submission Disabled (Static Site)</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">[</span><span class="logo-text">ASH</span><span class="logo-dot">.</span><span class="logo-bracket">]</span>
+        </a>
+        <p class="footer-motto">Learning. Exploring. Securing.</p>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-credit">Designed &amp; Built by Ashavni Kumar Sharma</p>
+        <p class="footer-rights">&copy; 2026 Ashavni Kumar Sharma. All rights reserved.</p>
+      </div>
+
+      <div class="footer-back-top">
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
